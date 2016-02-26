@@ -10,7 +10,7 @@ public class SelectionSort {
         {
             System.out.print("  "+i);
         }
-       //Bubble sort code starts here
+       //Selection sort code starts here
        for(int i =0;i<a.length-1;i++){
            int minIndex = i;
            for(int j=i+1;j<a.length;j++)
@@ -24,13 +24,7 @@ public class SelectionSort {
        int temp = a[minIndex];
        a[minIndex] = a[i];
        a[i] = temp;
-      // System.out.println("\nNext iteration");
-       //for(int in : a)
-        //{
-        //    System.out.print("  "+in);
-        //}
-       
-       
+      
        
        }
        
