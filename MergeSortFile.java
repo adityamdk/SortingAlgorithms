@@ -27,13 +27,13 @@ public class MergeSortFile {
     }
 	
 	
-    public static Comparable[] mergeSort(Comparable[] FullList) 
+    public static Integer[] mergeSort(Integer[] FullList) 
     {
         if (FullList.length <= 1) {
             return FullList;
         }
-        Comparable[] FirstHalf = new Comparable[FullList.length / 2];
-        Comparable[] SecondHalf = new Comparable[FullList.length - FirstHalf.length];
+        Integer[] FirstHalf = new Integer[FullList.length / 2];
+        Integer[] SecondHalf = new Integer[FullList.length - FirstHalf.length];
         System.arraycopy(FullList, 0, FirstHalf, 0, FirstHalf.length);
         System.arraycopy(FullList, FirstHalf.length, SecondHalf, 0, SecondHalf.length);
         mergeSort(FirstHalf);
@@ -43,7 +43,7 @@ public class MergeSortFile {
     }
      
     
-    private static void merge(Comparable[] FirstHalf, Comparable[] SecondHalf, Comparable[] result) 
+    private static void merge(Integer[] FirstHalf, Integer[] SecondHalf, Integer[] result) 
     {
         int First = 0;
         int Second = 0;
@@ -66,5 +66,5 @@ public class MergeSortFile {
         System.arraycopy(SecondHalf, Second, result, k, SecondHalf.length - Second);
     }
 	
-    
+
 }
