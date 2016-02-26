@@ -46,7 +46,6 @@ public class QuickSort {
         {
             System.out.print("  "+i);
         }
-       //Quick sort code starts here
 
     }
     
